@@ -1,0 +1,89 @@
+WELCOME TO DETECTING RISK SYSTEM
+*********************************************
+*    Personal Information Security System    *
+*********************************************
+*         Please fill in this form.          *
+*********************************************
+Name :
+Nur Syazwani
+Age :
+27
+Phone number :
+0136567342
+Email address :
+nursyazwani@gmail.com
+Password :
+563426
+*********************************************
+Personal Information Complete               *
+*********************************************
+**************************************************
+*                   Register                     *
+**************************************************
+* Please fill in this form to create an account  *
+**************************************************
+Email
+Enter Email : 
+nursyazwani@gmail.com
+Enter your account password: 565643
+Your password is wrong! You have 2 chance.
+Enter your account password: 563426
+Your password is correct.
+**************************************************
+*                    Validation                  *
+**************************************************
+*              Please submit this form           *
+**************************************************
+Username :
+Wani
+Password
+Enter password :
+563426
+Keyword
+Enter Keyword :
+563426
+**************************************************
+*                    Submit                      *
+**************************************************
+**************************************************
+*                 Warning Text                   *
+**************************************************
+Phone number :
+0136567342
+Email address :
+nursyazwani@gmail.com
+Warning Text : 
+Warning! Third-party wants to intrude on your data. Please be alert. Please click 'Yes' to block the action and protect your data. Stop it now!
+Yes
+Block and report.
+**************************************************
+*                     Threat                     *
+**************************************************
+Enter the number of x:
+1
+Hijack your usernames and passwords :
+1
+P1 = 15
+case 1
+end
+Total amount threat = 461
+Total amount probability = 15
+**************************************************
+*                  Vulnerability                 *
+**************************************************
+Broken authentication : 
+P7 = 15
+Cross-Site Scripting :
+P8 = 19
+Cross-Site Request Forgery :
+P9 = 17
+Security Misconfiguration :
+P10 = 22
+Total amount = 296
+Total amount = 73
+**************************************************
+*                      Risk                      *
+**************************************************
+Risk = 6x4x88
+Risk = 2112
+
