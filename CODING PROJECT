@@ -1,0 +1,317 @@
+package projekSatellite;
+import java.util.Scanner;
+public class Satellite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+				int password = 0;
+				int passwords =0;
+						system();
+					    passwords += PersonalInformation1(password);			
+					    Register(passwords);
+					    Validation();
+					    WarningText();
+					    ThreatVurnebalityRisk();
+					}
+					    static Scanner scanMe1=new Scanner (System.in);
+					    public static int PersonalInformation1(int password) {
+
+
+		System.out.println("*********************************************");
+		System.out.println("*    Personal Information Security System    *");
+		System.out.println("*********************************************");
+		System.out.println("*         Please fill in this form.          *");
+		System.out.println("*********************************************");
+					  
+		System.out.println("Name :" );
+	       String name = scanMe1.nextLine();
+						
+		System.out.println("Age :");
+		   String age = scanMe1.nextLine();
+					    
+		System.out.println("Phone number :");
+		   String phonenumber = scanMe1.nextLine();
+					    
+		System.out.println("Email address :");
+		   String email1 = scanMe1.nextLine();
+					    
+		System.out.println("Password :");
+		    password = scanMe1.nextInt();
+					    
+					       
+		System.out.println("*********************************************");
+		System.out.println("Personal Information Complete               *");
+		System.out.println("*********************************************");
+			return password;
+			}	
+		        public static void PersonalInformation() {
+			}
+
+		       public static int Register(int password) {	
+		    	   
+		    
+                      
+          System.out.println("**************************************************");
+          System.out.println("*                   Register                     *");
+	   System.out.println("**************************************************");
+	   System.out.println("* Please fill in this form to create an account  *");
+	   System.out.println("**************************************************");
+				  
+		System.out.println("Email");
+		System.out.println("Enter Email : ");
+		   String email = scanMe1.next();
+				  
+		    for(int i=2;i>=0;i--) {
+				    	
+		System.out.print("Enter your account password: ");
+		    int a = scanMe1.nextInt();
+		    if(a==password) {
+				        	
+		System.out.println("Your password is correct.");
+		    break;
+		        }else
+				       	   
+		System.out.print("Your password is wrong! You have "+i+" chance.");
+		System.out.println(); 
+		    if(i==0) {
+		System.out.print("Sorry, you need to wait 5 minutes to key in your password again!");  
+		System.out.println(); 
+				     
+		System.out.println("*********************************************");
+		System.out.println("By creating an account you agree to our     *");
+		System.out.println("Register                                    *");
+		System.out.println("Already have an account? Sign in            *");
+		System.out.println("*********************************************");
+		 }
+				       }
+			return password;
+				}
+
+		   public static void Validation() {
+		  
+              
+           System.out.println("**************************************************");
+	     System.out.println("*                    Validation                  *");
+	     System.out.println("**************************************************");
+	     System.out.println("*              Please submit this form          *");
+            System.out.println("**************************************************");
+
+		System.out.println("Username :"); 
+		   String username2 = scanMe1.next();
+				       
+		System.out.println("Password");
+		System.out.println("Enter password :"); 
+		   double password3 = scanMe1.nextDouble();
+
+		System.out.println("Keyword");
+		System.out.println("Enter Keyword :"); 
+		   double keyword1 = scanMe1.nextDouble();  
+
+				
+
+		            
+           System.out.println("**************************************************");
+	    System.out.println("*                    Submit                      *");
+	    System.out.println("**************************************************");
+			}
+				       
+		        public static void WarningText() {	
+		   
+          System.out.println("**************************************************");
+	    System.out.println("*                 Warning Text                   *");
+	    System.out.println("**************************************************");
+				  	  
+		  System.out.println("Phone number :" );
+		     String name1 = scanMe1.next();
+				  		
+		  System.out.println("Email address :");
+		     String email2 = scanMe1.next();
+				  	    
+		  System.out.println("Warning Text : ");
+		  System.out.println("Warning! Third-party wants to intrude on your data. Please be alert. Please click 'Yes' to block the action and protect your data. Stop it now!" );
+		     String warningtext = scanMe1.next();
+				  	    
+				  	    
+		       if(warningtext.equals ("Yes")) 
+		        {
+		  System.out.println("Block and report.");
+		      }
+			 else 
+				  {
+		  System.out.println("Everything will be at your own risk." );
+			}
+				  	  
+				}
+			boolean warningtext(String string) {
+			// TODO Auto-generated method stub
+			return false;
+		    }
+				{
+				           } 
+				      public static void system() {
+				    	  System.out.println("WELCOME TO DETECTING RISK SYSTEM");
+				      }
+		      public static void ThreatVurnebalityRisk() { //**
+						
+	
+
+
+	  System.out.println("**************************************************");
+        System.out.println("*                     Threat                     *");
+        System.out.println("**************************************************");
+					    
+			int x;
+			int p1 = 0; //P(A) declare as p
+			int p2 = 0; 
+			int p3 = 0; 
+			int p4 = 0; 
+			int p5 = 0; 
+			int p6 = 0; 
+			int a1 = 90;//n(A) declare as a
+			int a2 = 85; 
+			int a3 = 60;     
+			int a4 = 50; 
+			int a5 = 86; 
+			int a6 = 90;
+			int s = 6;//n(S) declare as s
+			int total1; int total2;
+						
+			     //Formula P(A) = n(A)/n(S)
+						
+		   String case_Name [] = {"case 1", "case 2 " , "case 3" , "case 4", "case 5"};  //**
+		   System.out.println("Enter the number of x:");
+				x = scanMe1.nextInt();
+					       
+			switch(x) {
+			case 1:
+			System.out.println("Hijack your usernames and passwords :");
+				String namePass = scanMe1.next();
+				p1 = a1 / s; //Hijack your usernames and passwords
+			System.out.println("P1 = " + p1);
+			System.out.println(case_Name[0]); //**
+				String y = scanMe1.next();
+					break;
+							
+			case 2:
+			System.out.println("Steal your money and open credit card and bank accounts in your name :");
+				y = scanMe1.next();
+				p2 = a2 / s; //Steal your money
+			System.out.println("P2= " + p2 ); 
+			System.out.println(case_Name[1]); //**
+					break;
+					        
+					        
+			case 3:
+			System.out.println("Ruin your credit :");
+				 y = scanMe1.next();
+				 p3 = a3 / s; //Ruin your credit
+			System.out.println("P3 = " + p3);
+			System.out.println(case_Name[2]); //**
+					break;
+					     
+			case 4:
+			System.out.println("Request new account Personal Identification Numbers (PINs) or additional credit cards :");
+				y = scanMe1.next();
+				p4 = a4 / s; //Request new account Personal Identification Numbers (PINs) or additional credit cards
+			System.out.println("P4 = " + p4);
+			System.out.println(case_Name[3]); //**
+					break;
+					         
+			case 5:
+			System.out.println("Use and abuse your Social Security number :");
+				y = scanMe1.next();
+				p5 = a5 / s; //Use and abuse
+			System.out.println("P5 = " + p5); 
+			System.out.println(case_Name[4]); //**
+					break;
+						
+			case 6:
+			System.out.println("Sell your information to other parties who will use it for illicit or illegal purposes :");
+				y = scanMe1.next();
+				p6 = a6 / s; //Sell information
+			System.out.println("P6 = " + p6);
+			System.out.println(case_Name[5]); //**
+					break; 
+					 
+				}
+					{
+						
+
+				//Total amount
+				    total1 = a1 + a2 + a3 + a4 + a5 + a6;
+			  System.out.println("Total amount threat = " + total1);
+						
+				//Total probability
+				    total2 = p1 + p2 + p3 + p4 + p5 + p6;
+			  System.out.println("Total amount probability = " + total2);
+									 
+			  
+            System.out.println("**************************************************");
+	     System.out.println("*                  Vulnerability                 *");
+	     System.out.println("**************************************************");
+							    
+							    
+				//P(A) declare as p	 
+				 int p7; 
+				 int p8; 
+				 int p9; 
+				 int p10; 
+							  
+				//n(A) declare as a
+				 int a7 = 60; 
+				 int a8 = 77;  
+				 int a9 = 70; 
+				 int a10 = 89; 
+				 int s1 = 4;//n(S) declare as s
+				 int total3; int total4;
+										
+				//Formula P(A) = n(A)/n(S)
+										
+		         System.out.println("Broken authentication : ");
+				 p7 = a7 / s1; //Broken authentication
+			  System.out.println("P7 = " + p7); //**
+										
+			  System.out.println("Cross-Site Scripting :");
+				p8 = a8 / s1; //Cross-Site Scripting
+			  System.out.println("P8 = " + p8); //**
+									
+			  System.out.println("Cross-Site Request Forgery :");
+				p9 = a9 / s1; //Cross-Site Request Forgery
+			  System.out.println("P9 = " + p9); //**
+										
+			  System.out.println("Security Misconfiguration :");
+				p10 = a10 / s1; //Security Misconfiguration
+			  System.out.println("P10 = " + p10); //**
+										
+									 
+				//Total amount
+				    total3 = a7 + a8 + a9 + a10;
+			  System.out.println("Total amount = " + total3);
+										
+				//Total probability
+				    total4 = p7 + p8 + p9 + p10;
+			  System.out.println("Total amount = " + total4);
+					        
+					 	   
+     System.out.println("**************************************************");
+     System.out.println("*                      Risk                      *");
+     System.out.println("**************************************************");
+					 
+				 int probability_occurrence;
+				 int risk;
+					 
+			//probability of occurrence = probability threat + probability vulnerability
+				probability_occurrence = total2 + total4;
+					 
+			//risk = (threat x vulnerability x probability of occurrence)
+				risk = (s * s1 * probability_occurrence);
+
+			  System.out.println("Risk = " + s + "x" + s1 + "x" +  probability_occurrence);
+			  System.out.println("Risk = " + risk);
+						
+					   }
+					 }
+		
+		}
+ 
